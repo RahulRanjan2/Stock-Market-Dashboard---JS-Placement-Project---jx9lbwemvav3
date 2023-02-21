@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stock Market Dashboard</title>
+    <link rel="stylesheet"  href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+  <div id="main-cointainer">
+    <div class="header">
+      <h3><i class="fa-solid fa-arrow-up"></i>STOCK MARKET DASHBOARD<i class="fa-solid fa-arrow-down"></i></h3>
+    </div>
+    <div id="input-button">
+      <div class="input-container">
+        <input type="text" id="stock-symbol" name="stock-symbol"
+        placeholder="Search for Symbol....">
+        <button class="fa-magnifying" id="add-stock" type="button"><i
+            class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div class="timeframe-container">
+        <button type="button" id="intraday" class="btnclass">INTRADAY</button>
+        <button type="button" id="daily" class="btnclass">DAILY</button>
+        <button type="button" id="weekly" class="btnclass">WEEKLY</button>
+        <button type="button" id="monthly" class="btnclass">MONTHLY</button>
+     </div>
+    </div>
+    <div id="watchlist-data" class="watchlist">
+     <div id="watch-head"><h2>YOUR WATCHLIST</h2></div>
+      <div id="watchlist-cards">
 
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
