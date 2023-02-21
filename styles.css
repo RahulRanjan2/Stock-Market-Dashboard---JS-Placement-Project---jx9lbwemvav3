@@ -1,1 +1,223 @@
+*{
+    box-sizing: border-box;
+}
 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-cointainer{
+    flex-wrap: wrap;
+    height: 98vh;
+    width: 25vw;
+    
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(145, 145, 145);
+    height: 80%;
+    width: 100%;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+
+}
+.header{
+    height: 10%;
+}
+
+.fa-arrow-down {
+    color: red;
+    font-size: 1em;
+    margin: 0.4em;
+}
+
+.fa-arrow-up {
+    color: rgb(20, 214, 20);
+    font-size: 1em;
+    margin: 0.4em;
+}
+::placeholder{
+    color: black !important;
+}
+
+#input-button{
+    background-color: rgb(206, 206, 206);
+    height: 28%;
+    width: 100%;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.input-container{
+    background-color: rgb(206, 206, 206);
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius:1rem;
+}
+
+#stock-symbol{
+    border: none;
+    height: 70%;
+    width: 75%;
+    border-radius: 1rem;
+    background-color: grey;
+    color: black;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 2em;
+}
+
+.fa-magnifying {
+
+    background-color: grey;
+    color:  rgb(206, 206, 206);
+    text-align: center;
+    width: 15%;
+    font-size: 2em;
+    border-radius: 50%;
+    height: 90%;
+    border: none;
+    margin-top: 1em;
+
+}
+
+.timeframe-container{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    text-align: center;
+    align-self: flex-start;
+    place-items: center;
+    height: 50%;
+    width: 100%;
+
+}
+
+.btnclass{
+    background-color: grey;
+    height: 60%;
+    width: 90%;
+    border-radius: 1rem;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+#watchlist-data{
+    height: 40%;
+    width: 100%;
+    background-color: rgb(206, 206, 206);
+    border-radius: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+.stockcard-data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:rgb(162, 162, 162);
+    width: 98%;
+    height: 25%;
+    text-align: center;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    align-items: center;
+}
+#watchlist-cards{
+    height: 75%;
+    width: 100%;
+    overflow: scroll;
+    margin-top: 1rem;
+    /* display: flex; */
+    
+}
+
+#stock-name{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(58, 58, 58);
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
+}
+#stock-price{
+    text-align: center;
+    color: black;
+    background-color: rgb(30, 214, 30);
+    height: 70%;
+    width: 25%;
+    font-weight: bold;
+    border-radius: 1rem;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1rem;
+    align-items: center;
+    
+}
+
+#time-frame{
+    font-weight: bold;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    height: 60%;
+    width: 20%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    
+}
+
+.btn-delete{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    height: 70%;
+    width: 10%;
+    font-size: 1em;
+    border: none;
+    text-align: center;
+    font-size: 2rem;
+}
+table {
+    font-weight: bold;
+    font-size: 0.7rem;
+    background-color: grey;
+    overflow: scroll;
+    height: 50%;
+    margin: 0px;
+    border-radius: 1rem;
+    width: 100%;
+    
+}
+
+div::-webkit-scrollbar {
+    display: none;
+  }
+  #watch-head{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 15%;
+    width: 100%;
+  }
+  h2{
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    background-color: rgb(173, 173, 173);
+    border-radius: 1rem;
+    margin:0px ;
+  }
