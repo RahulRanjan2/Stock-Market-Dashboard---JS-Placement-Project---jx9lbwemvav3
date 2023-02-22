@@ -181,6 +181,11 @@ function Getstockcarddata(timeperiod,newid){
     // console.log(headdata);
     stable= document.createElement("table");
     stable.setAttribute('id','stocktab');
+       
+        let crossbtn = document.createElement("button");
+    crossbtn.classList.add("classnam");
+    crossbtn.innerHTML=`<i class="fa-solid fa-xmark"></i>`;
+    stable.appendChild(crossbtn);
 
     for(let i=0; i<=5;i++){
         let row = stable.insertRow();
