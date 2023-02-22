@@ -221,3 +221,7 @@ div::-webkit-scrollbar {
     border-radius: 1rem;
     margin:0px ;
   }
+.classnam{
+    background-color: rgb(162, 162, 162);
+    border: none;
+  }
