@@ -193,7 +193,7 @@ h3{
 table {
     font-weight: bold;
     font-size: 0.7rem;
-    background-color: grey;
+    background-color: rgb(162, 162, 162);
     overflow: scroll;
     height: 50%;
     margin: 0px;
