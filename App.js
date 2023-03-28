@@ -146,6 +146,7 @@ function Getstockcarddata(timeperiod,newid){
              theaddata = Object.keys(data['Time Series (Daily)']);
             // console.log(tbodydata);
             // console.log(theaddata);
+            stockcardtable(tbodydata[0]);
           })
          .catch((Error)=>{console.log(Error)})
     }
@@ -172,20 +173,25 @@ function Getstockcarddata(timeperiod,newid){
             // console.log(tbodydata);
             // console.log(theaddata);
         }
+        stockcardtable(tbodydata[0]);
       })
      .catch((Error)=>{console.log(Error)})
    };
 
-   let headdata = tbodydata [0];
-   function stockcardtable(){
+
+
+   function stockcardtable(headdata){
     // console.log(headdata);
     stable= document.createElement("table");
     stable.setAttribute('id','stocktab');
-       
-        let crossbtn = document.createElement("button");
+
+    
+    let crossbtn = document.createElement("button");
     crossbtn.classList.add("classnam");
     crossbtn.innerHTML=`<i class="fa-solid fa-xmark"></i>`;
     stable.appendChild(crossbtn);
+    
+
 
     for(let i=0; i<=5;i++){
         let row = stable.insertRow();
@@ -218,7 +224,9 @@ function Getstockcarddata(timeperiod,newid){
                 }
                 //Values of Data of open, high, low , close, Volume
             }
+            
     }
+
        let selectstockcard = document.getElementById(newid);
        if(selectstockcard.nextSibling){
         selectstockcard.parentNode.insertBefore(stable,selectstockcard.nextSibling);
@@ -227,8 +235,11 @@ function Getstockcarddata(timeperiod,newid){
       }
 
    }
-   stockcardtable();
+
 };
+
+
+
 
 
 
